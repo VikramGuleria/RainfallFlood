@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80DEEA"
+    android:orientation="vertical"
+    tools:context="com.example.android.rainfallflood.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/deforst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:hint="Deforestation %age value"
+            android:inputType="numberDecimal"
+            android:textAllCaps="true"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/exponant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:hint="Increment %age Rainfall"
+            android:inputType="numberDecimal"
+            android:textAllCaps="true"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="20sp"
+            android:text="Values of Time"
+            android:textAllCaps="true"
+            android:textColor="#4E342E"
+            android:textSize="26sp"
+            android:textStyle="bold"
+
+            />
+
+        <CheckBox
+            android:id="@+id/zerohour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Less than 30 min."
+            android:textSize="24sp" />
+
+
+        <CheckBox
+            android:id="@+id/halfhour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="0.5 to 2hr"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/twohour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="2 to 12hrs"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/twelvehour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="12 to 24hrs"
+            android:textSize="24sp" />
+
+
+        <CheckBox
+            android:id="@+id/twentyhour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="More than 1 Day"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:text="Type of Valley"
+            android:textAllCaps="true"
+            android:textColor="#4E342E"
+            android:textSize="26sp"
+            android:textStyle="bold"
+
+            />
+
+        <CheckBox
+            android:id="@+id/ridge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+
+            android:text="Ridge"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/plane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Plane Terrain"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/steep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Steep Valley"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/backed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Blocked Valley"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="16sp"
+            android:text="Upstream Water Resources "
+            android:textAllCaps="true"
+            android:textColor="#4E342E"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+
+        <CheckBox
+            android:id="@+id/perennial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Perennial Glacier"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/nonperennial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Non-Perennial Glacier"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/antiquated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Antiquated Glacier"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/priver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Perennial River"
+            android:textSize="24sp" />
+        <CheckBox
+            android:id="@+id/npriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Non Perennial River"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="16sp"
+            android:text="Seasonal Infrastructure dependence value"
+            android:textAllCaps="true"
+            android:textColor="#4E342E"
+            android:textSize="26sp"
+            android:textStyle="bold"
+
+            />
+
+        <CheckBox
+            android:id="@+id/summer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Summer and Winter"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/monsoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+
+            android:text="Mid and End Monsoon"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/monsoonstarting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+
+            android:text="Monsoon Starting"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/noI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="NO Activity"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="24sp" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#212121" />
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:background="#4E342E"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Result"
+            android:textColor="#D50000"
+            android:textSize="26sp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <Button
+        android:id="@+id/buttoncalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_margin="10dp"
+        android:background="#EEFF41"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="submitOrder"
+        android:text="Predict"
+        android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_margin="10dp"
+            android:background="#AFB42B"
+            android:gravity="center"
+            android:onClick="reset"
+            android:text="Reset"
+            android:textStyle="bold" />
+</LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
